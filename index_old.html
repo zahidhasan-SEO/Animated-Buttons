@@ -1,0 +1,38 @@
+<style>
+    div {
+        height: 200px;
+        width: 200px;
+        margin: 50px;
+        float: left;
+    }
+    .box {
+        background: rgb(71,241,33);
+background: linear-gradient(90deg, rgba(71,241,33,1) 0%, rgba(37,241,254,1) 50%, rgba(240,0,255,1) 100%);
+        animation: rotate 2s linear infinite;
+
+    }
+
+    .circle{
+        border-radius: 50%;
+        background: rgb(71,241,33);
+        background: radial-gradient(circle, rgba(71,241,33,1) 0%, rgba(37,241,254,1) 50%, rgba(240,0,255,1) 100%);
+        animation: rotatee 2s linear infinite;
+    }
+
+    
+    @keyframes rotate {
+        100%{
+            filter: hue-rotate(360deg);
+        }        
+    }
+
+    @keyframes rotatee {
+        100%{
+            filter: hue-rotate(360deg);
+        }        
+    }
+
+
+</style>
+<div class="box"></div>
+<div class="circle"></div>
